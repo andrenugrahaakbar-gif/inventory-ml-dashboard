@@ -1,0 +1,6 @@
+No,Temuan (Finding),Implikasi Desain Sistem,Komponen Sistem
+1,Permintaan sangat volatile (CV tinggi),Model prediksi adaptif (ML) > rata-rata statis,XGBoost Demand Forecasting
+2,Terdapat pola musiman & hari dalam seminggu,Fitur Month & DayOfWeek dimasukkan ke XGBoost,Feature Engineering (temporal)
+3,Risiko stockout nyata tanpa Safety Stock,Safety Stock berbasis Z-score pada service level 95%,Safety Stock & ROP Calculation
+4,Autokorelasi lag-1 & lag-2 signifikan,"Lag_1, Lag_2, Rolling_Mean_3 sebagai fitur utama",Lag Features
+5,"Metode baseline (MA, Naïve) memiliki error tinggi",XGBoost dengan feature engineering mengungguli baseline,Model Evaluation & Comparison
